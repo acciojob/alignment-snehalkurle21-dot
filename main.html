@@ -1,16 +1,85 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>HTML Assignment 3</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+    <h1 class="assignment-title">HTML Assignment #3</h1>
+
+    <!-- TABLE 1 (3x3) -->
+    <table id="table-1" class="middle">
+        <tr>
+            <td id="t11">left</td>
+            <td id="t12" class="center">center</td>
+            <td id="t13" class="right">right</td>
+        </tr>
+
+        <!-- middle row has class "center" -->
+        <tr class="center">
+            <td>left</td>
+            <td>center</td>
+            <td class="right">right</td>
+        </tr>
+
+        <tr>
+            <td>left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
+        </tr>
+    </table>
+
+    <!-- TABLE 2 (6x6, first row single cell colspan=6) -->
+    <table id="table-2" class="middle">
+        <tr>
+            <td id="t21" colspan="6"></td>
+        </tr>
+
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+
+    <!-- TABLE 3 (image; first row green, last row blue) -->
+    <table id="table-3" class="middle">
+        <!-- first row: green background, spans 3 columns -->
+        <tr>
+            <td class="green" colspan="3"></td>
+        </tr>
+
+        <!-- middle row: left blank, center image cell (id="t-image"), right blank -->
+        <tr>
+            <td style="width:35%"></td>
+
+            <td id="t-image" style="width:30%; text-align:center;">
+                <!-- second image URL provided -->
+                <img src="https://i.ytimg.com/vi/Ifh-ZndgQyQ/hqdefault.jpg
+" alt="assignment image" width="300">
+            </td>
+
+            <td style="width:35%"></td>
+        </tr>
+
+        <!-- last row: blue background, spans 3 columns -->
+        <tr>
+            <td class="blue" colspan="3"></td>
+        </tr>
+    </table>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>

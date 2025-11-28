@@ -1,1 +1,54 @@
-/*  your css code here. If applicable */
+/* heading */
+.assignment-title {
+    text-align: center;
+    margin-top: 12px;
+}
+
+/* table styling required */
+table.middle {
+    width: 90%;
+    margin: 18px auto;
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+
+table.middle,
+table.middle td,
+table.middle th {
+    border: 1px solid black;
+}
+
+table.middle td,
+table.middle th {
+    padding: 1px;
+    vertical-align: middle;
+}
+
+/* alignment classes */
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+/* table-3 colors */
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+
+/* image styling */
+#t-image img {
+    display: block;
+    margin: 6px auto;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #ffffff;
+    box-sizing: border-box;
+}
